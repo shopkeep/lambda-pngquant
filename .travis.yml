@@ -10,8 +10,9 @@ script:
 
 deploy:
   provider: releases
-  api_key: "GITHUB OAUTH TOKEN"
-  file: "artifacts/pngquant.gz"
+  api_key:
+    secure: dkvmb5LkwIvK8MXfBAhceXhaga8eZp9ze3saqzRDEO+niq7oUl4qYjnzBgF0uiwuT04qA+6k1UIkALXaDwMitKIqmEP034dBqLuHqDfVQO6YTjCR9UDyFPbj+AsohJSW877a6gNEDVKVn3tHH6nqUpQ7PZGDlRA+ebCczYiCqA4pxmeh72x/PbyhgRS9QF3Xv28IVlRwX6BhB/aR+RdjH7iH42Y/JexHzTjIlZ8mVRUxBt/lzzhQW8pR0dJCkOqAtwfFptM7Emg7anFbcdkbW6RjgqzhZo3V4qhJ35AGrFSu6AiIczXjTOb/PNwcDWEcroFLARqhYNCBvJQlmDYb6ePckCVDqAHh97dV98sq8CCG/GK9uWVAuHa62yMd0geH1c+rCekUTbha+wP+1cmwkk3PO48UHY/F9e1M6VHjMBJcozzugWEqi11JRNEn1dG28cQnuJuPtLXXOjI0+gMj9akXsTSnt3LQjJqyghDmRQ7XgrKWx0nMs9zqTKa3kNPcW+nwRG4ohlcbgdkTVDFMJHNCsfy4WErKXyLxLX4lzzaFQCYvAX/x/pHq8GrLVf/ZuWRx9zuZeIj5aiY9VTDllSC+0oKzWzn1ClG2phsNd3WyVZXXFo93VcdiDl25IoEJHZQMbbPOhV0lTAFXH4mnT70/Q1rRriynhRZhka1ZhCU=
+  file: artifacts/pngquant.gz
   skip_cleanup: true
   on:
     tags: true
